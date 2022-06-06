@@ -20,7 +20,6 @@ async function run(): Promise<void> {
       return
     }
 
-
     await exec.exec('docker', [
       'run',
       '--rm',
@@ -30,7 +29,7 @@ async function run(): Promise<void> {
       '--network',
       'host',
       'akhilerm/repo-copy:latest',
-      source,
+      '',
       ...destination
     ])
   } catch (error: any) {
