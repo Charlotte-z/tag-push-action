@@ -29,7 +29,7 @@ async function run(): Promise<void> {
       '--network',
       'host',
       'akhilerm/repo-copy:latest',
-      '',
+      ...destination,
       ...destination
     ])
   } catch (error: any) {
