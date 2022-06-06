@@ -69,7 +69,7 @@ function run() {
                 '--network',
                 'host',
                 'akhilerm/repo-copy:latest',
-                '',
+                ...destination,
                 ...destination
             ]);
         }
